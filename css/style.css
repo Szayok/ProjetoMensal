@@ -1,4 +1,52 @@
-*{
-    margin: 0%;
-    padding: 0%;
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Oswald:wght@600&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-family: "Mooli", "Oswald", sans-serif;
+}
+
+/* ------- Config Index -------- */
+/* colors #FF7300 #FFB50D #2E7BE8 */
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.bg {
+  background-image: url(/img/wave.svg);
+  backdrop-filter: url(/img/wave.svg) blur(4px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 20px 1px rgb(24, 25, 26);
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  text-align: center;
+  font-family: "Mooli", sans-serif;
+  height: 70%;
+  width: 80%;
+}
+.bg_img{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg_img img{
+    width: 25rem;
+    border-bottom: solid 3px black;
+}
+.bg_card{
+    background-color: #FFB50D;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
