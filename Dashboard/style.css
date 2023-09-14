@@ -1,0 +1,29 @@
+.side-bar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:cadetblue;
+    padding-top: 20px;
+  }
+  
+  .side-bar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-bar li {
+    padding: 10px;
+    text-align: left;
+    
+  }
+  
+  .side-bar a {
+    color: white;
+    text-decoration: none;
+  }
+  li a:hover{
+    background-color: rgb(100, 113, 123);
+    color:white;
+  }
