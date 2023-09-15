@@ -26,7 +26,7 @@ function login() {
     var loginEle = document.getElementById("email").value;
     var passEle = document.getElementById("password").value;
     var mensagemErro = document.getElementById("mensagem-erro");
-    document.getElementById("submit").style.background = "rgb(255, 255, 255)";
+    document.getElementById("login").style.background = "rgb(255, 255, 255)";
     setTimeout(() => { document.getElementById("submit").style.background = "rgb(255, 236, 236)"; }, 100);
 
     if (passEle.trim() == "" || loginEle.trim() == "") {

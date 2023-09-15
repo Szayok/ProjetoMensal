@@ -1,15 +1,44 @@
 .login {
   margin-left: 37%;
   margin-top: 17%;
-  
+
   padding: 3%;
   border-radius: 10px;
   width: 300px;
 }
+.register{
+  
+    margin-left: 37%;
+    margin-top: 17%;
+  
+    padding: 3%;
+    border-radius: 10px;
+    width: 300px;
+  
+}
 
-input[type="submit"]{
-  background-color: rgb(255, 236, 236);
-  border: none;
-  padding: 3%;
+button {
+  background-color: rgba(224, 224, 75, 0.58);
   cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 30px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: rgba(233, 176, 90, 0.884);
+}
+
+input[type="name"] {
+  border-radius: 30px;
+
+}
+
+input[type="email"] {
+  border-radius: 30px;
+}
+
+input[type="password"] {
+  border-radius: 30px;
 }
