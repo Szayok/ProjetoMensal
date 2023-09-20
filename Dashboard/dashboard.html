@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="/Dashboard/style.css"> 
-</head>
-<body>
-    <script src="main.js"></script>
-    <div class="side-bar">
-        <ul>
-            
-            <img src="Imagens/UserLOGO_pequena.png"><li><a href="Perfil">Perfil</a></li>
-            <li><a href="Config">Config</a></li>
-            <li><a href="/Login/index.html">Log-out</a></li>
-        </ul>
-    </div>
+    <title>AlugaMotors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    
+
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="search" placeholder="Pesquisar...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-book-content icon"></i>
+                            <span class="text nav-text">Histórico</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-user icon"></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-star icon"></i>
+                            <span class="text nav-text">Favoritos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="log-out">
+                <li class="nav-link">
+                    <a href="#"">
+                        <i class=" bx bx-cog icon"></i>
+                        <span class="text nav-text">Configurações</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bx-help-circle icon"></i>
+                        <span class="text nav-text">Central de ajuda</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <script src="main.js"></script>
+    <!--Area do calendário-->
 </body>
+
 </html>

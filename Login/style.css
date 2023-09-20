@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color: #E4E9F7;
+    --sidebar-color:#FFF;
+    --primary-color:#fbca00;
+    --primary-color-light:#F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    /* transição*/
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+
 .login {
   margin-left: 37%;
   margin-top: 17%;
@@ -22,8 +45,9 @@ button {
   cursor: pointer;
   border: none;
   padding: 5px;
-  border-radius: 30px;
+  border-radius: 5px;
   width: 100px;
+  transition: var(--tran-04);
 }
 
 button:hover {
@@ -31,14 +55,20 @@ button:hover {
 }
 
 input[type="name"] {
-  border-radius: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--text-color)
 
 }
 
 input[type="email"] {
-  border-radius: 30px;
+  border-radius: 5px;
+  border-style: solid;
+
 }
 
 input[type="password"] {
-  border-radius: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  
 }
