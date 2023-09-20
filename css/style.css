@@ -6,8 +6,9 @@
   padding: 0%;
 }
 html {
-  /* font-family: "Mooli", "Oswald", sans-serif; */
   font-family: "Poppins", sans-serif;
+  --text: #33322e;
+  --color: #04BFBF;
 }
 
 /* ------- Config Index -------- */
@@ -28,43 +29,79 @@ body {
 .card {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 2px 20px 1px rgb(24, 25, 26);
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   margin: auto;
   text-align: start;
   /* font-family: "Mooli", sans-serif; */
   height: 70%;
-  width: 80%;
+  
 }
 .bg_img{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 38rem;
 }
 .bg_img img{
     width: 25rem;
     border-bottom: solid 3px black;
 }
 .bg_card{
-    background-color: #FFB50D;
+    background-color: var(--color);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.bg_card form{
-
+    width: 30rem;
 }
 .bg_card label{
     font-size: 1.5rem;
-    font-weight: 400;
+    color: var(--text);
+    
 }
 .bg_card input{
-  height: 1.5rem;
-  width: 35vh;
+  height: 1rem;
+  width: 100%;
+  padding: 10px 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+    border-bottom: 1px solid #6d6a6ab9;
+    outline: none;
+    background: #ffffffe3;
+}
+.bg_card a{
+  text-decoration: none;
+  color: var(--text);
+  display:block;
+}
+.bg_card a:hover:not(button a){
+  color: rgb(243, 243, 243);
+}
+.login{
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #000000;
+  margin: 10px 0;
+}
+.login a{
+  color: white;
+  font-size: 1.5rem;
 }
 .buttons{
-  display: block;
 
+}
+.buttons button{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ebeae8;
+}
+.buttons i{
+  height: 100%;
 }
