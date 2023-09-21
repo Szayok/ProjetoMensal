@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 :root{
-    --body-color: #E4E9F7;
-    --sidebar-color:#FFF;
-    --primary-color:#fbca00;
-    --primary-color-light:#F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
+  --body-color: #E4E9F7;
+  --sidebar-color:#FFF;
+  --primary-color:#04BFBF;
+  --primary-color-light:#F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: #707070;
     /* transição*/
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -22,18 +22,17 @@
 
 
 .login {
+  display: block;
   margin-left: 37%;
   margin-top: 17%;
-
   padding: 3%;
   border-radius: 10px;
   width: 300px;
 }
 .register{
   
-    margin-left: 37%;
-    margin-top: 17%;
-  
+    margin-left: 35%;
+    margin-top: 15%;
     padding: 3%;
     border-radius: 10px;
     width: 300px;
@@ -41,7 +40,7 @@
 }
 
 button {
-  background-color: rgba(224, 224, 75, 0.58);
+  background-color: var(--primary-color);
   cursor: pointer;
   border: none;
   padding: 5px;
@@ -51,13 +50,14 @@ button {
 }
 
 button:hover {
-  background-color: rgba(233, 176, 90, 0.884);
+  background-color: var(--text-color);
+  text-decoration-color: var(--primary-color-light);
 }
 
 input[type="name"] {
   border-radius: 5px;
   border-style: solid;
-  border-color: var(--text-color)
+  border-color: var(--text-color);
 
 }
 
