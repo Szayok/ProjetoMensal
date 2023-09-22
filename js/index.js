@@ -41,7 +41,7 @@ function login() {
 
         if (loginEle === emailRegistrado && passEle === senhaRegistrada) {
             // volta ao menu
-            window.location.href = "/Dashboard/dashboard.html";
+            window.location.href = "/pages/dashboard.html";
         } else {
             // Credenciais inválidas
             mensagemErro.textContent = "Credenciais inválidas.";

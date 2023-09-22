@@ -144,10 +144,3 @@ body {
 .buttons i {
   font-size: 1.5rem;
 }
-.claro{
-  letter-spacing: 4px;
-}
-.claro:hover{
-  color: #ebeae8;
-  width: auto;
-}

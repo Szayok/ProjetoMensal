@@ -126,17 +126,14 @@ body {
   margin-bottom: 10px;
   background-color:var(--color);
   border-radius: 5px;
+  cursor: pointer;
 }
-.login a{
+.login p{
   width: 100%;
   margin: auto;
   color: white;
   font-family: "Poppins", sans-serif;
 }
-/* .login a:hover {
-  background-color:white;
-  color: var(--color);
-} */
 .buttons {
   margin-bottom: 10px;
   display: flex;
@@ -149,6 +146,7 @@ body {
 .buttons a{
   width: 6rem;
   height: auto;
+  transition: 0.5s;
 }
 .buttons a:hover{
   color: var(--color);
@@ -158,6 +156,7 @@ body {
 }
 .claro{
   letter-spacing: 4px;
+  transition: 0.5s;
 }
 .claro:hover{
   color: var(--color);
