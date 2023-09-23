@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  --text: #33322e;
+  --color: #04bfbf;
+}
+
+/* ------- Config Index -------- */
+/* colors #FF7300 #FFB50D #2E7BE8 */
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.bg {
+  background-image: url(/img/wave.svg);
+  backdrop-filter: url(/img/wave.svg) blur(4px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 20px 1px rgb(24, 25, 26);
+  display: flex;
+  margin: auto;
+  text-align: start;
+  /* font-family: "Mooli", sans-serif; */
+  height: 70%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.bg_img {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.bg_img img {
+  width: 25rem;
+  border-bottom: solid 3px black;
+}
+.bg_card {
+  background-color: var(--color);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.configs{
+  text-align: center; background-color: aliceblue; padding: 3% 8%; border-radius: 5px;
+}
+.style_h1{
+  margin-right:auto; 
+  color:var(--text);
+}
+.logo{
+  width: 5rem;
+}
+.box_login_input {
+  position: relative;
+  
+}
+.box_login_input input {
+  width: 50vh;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #6d6a6ab9;
+  outline: none;
+  background: #ffffffe3;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.box_login_input i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: var(--text);
+}
+.box_login_input label {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 1rem;
+  color: var(--text);
+  pointer-events: none;
+  transition: 0.1s;
+}
+.box_login_input input:focus ~ label,
+.box_login_input input:valid ~ label{  
+  opacity: 0;
+}
+.box_login_input input:focus ~ i,
+.box_login_input input:valid ~ i{
+  opacity: 0;
+}
+
+.bg_card a {
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+}
+
+.login {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  margin-bottom: 10px;
+  background-color:var(--color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login p{
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.buttons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons span{
+  font-size: 1.5rem;
+  color: #ebeae8;
+}
+.buttons a{
+  width: 6rem;
+  height: auto;
+  transition: 0.5s;
+}
+.buttons a:hover{
+  color: var(--color);
+}
+.buttons i {
+  font-size: 1.5rem;
+}
+.claro{
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+.claro:hover{
+  color: var(--color);
+  width: auto;
+}
