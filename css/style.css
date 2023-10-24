@@ -16,9 +16,6 @@ html {
 body {
   display: flex;
   height: 100vh;
-}
-
-.bg {
   background-image: url(/img/wave.svg);
   backdrop-filter: url(/img/wave.svg) blur(4px);
   background-position: center;
@@ -26,27 +23,28 @@ body {
   background-size: cover;
 }
 
-.card {
+main {
   background-color: rgb(255, 255, 255);
+  /* background-color: rgb(194, 37, 37); */
   box-shadow: 0px 2px 20px 1px rgb(24, 25, 26);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin: auto;
-  text-align: start;
-  /* font-family: "Mooli", sans-serif; */
-  height: 70%;
+  height: 60%;
+  width: 80%;
+  /* padding: 10px; */
+
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 .bg_img {
-  background-color: rgb(255, 255, 255);
-  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
   justify-content: center;
   align-items: center;
-  width: 38rem;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 .bg_img img {
   width: 25rem;
@@ -54,31 +52,32 @@ body {
 }
 .bg_card {
   background-color: var(--color);
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
+  text-align: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.configs{
-  text-align: center; background-color: aliceblue; padding: 3% 8%; border-radius: 5px;
-}
-.style_h1{
-  margin-right:auto; 
-  color:var(--text);
-}
 .logo{
+  display: flex; 
+  align-items: center;
+  width: 100%;
+}
+.logo h1{
+  margin-right: auto;
+  color: var(--text);
+}
+.logo img{
   width: 5rem;
+  margin: 0 0 22px auto;
 }
 .box_login_input {
   position: relative;
-  
 }
 .box_login_input input {
   width: 50vh;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -105,11 +104,11 @@ body {
   transition: 0.1s;
 }
 .box_login_input input:focus ~ label,
-.box_login_input input:valid ~ label{  
+.box_login_input input:valid ~ label {
   opacity: 0;
 }
 .box_login_input input:focus ~ i,
-.box_login_input input:valid ~ i{
+.box_login_input input:valid ~ i {
   opacity: 0;
 }
 
@@ -124,11 +123,12 @@ body {
   height: 2rem;
   display: flex;
   margin-bottom: 10px;
-  background-color:var(--color);
+  /* background-color: white; */
   border-radius: 5px;
+  border: solid 1px white;
   cursor: pointer;
 }
-.login p{
+.login p {
   width: 100%;
   margin: auto;
   color: white;
@@ -139,26 +139,26 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.buttons span{
+.buttons span {
   font-size: 1.5rem;
   color: #ebeae8;
 }
-.buttons a{
+.buttons a {
   width: 6rem;
   height: auto;
   transition: 0.5s;
 }
-.buttons a:hover{
-  color: var(--color);
+.buttons a:hover {
+  color: #ebeae8;
 }
 .buttons i {
   font-size: 1.5rem;
 }
-.claro{
+.claro {
   letter-spacing: 4px;
   transition: 0.5s;
 }
-.claro:hover{
-  color: var(--color);
+.claro:hover {
+  color: #ebeae8;
   width: auto;
 }
