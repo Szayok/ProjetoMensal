@@ -19,7 +19,7 @@ function register() {
         document.getElementById("age").style.borderColor = "red";
         document.getElementById("rg").style.borderColor = "red";
         document.getElementById("cpf").style.borderColor = "red";
-        mensagemErro.textContent = "Preencha os campos.";
+        document.getElementById("register").style.background = "red";
     } else {
         alert("Registro bem-sucedido! Redirecionando para a página de login.");
         window.location.href = "index.html";
@@ -43,7 +43,7 @@ function login() {
         //caso deixem em branco
         document.getElementById("password").style.borderColor = "red";
         document.getElementById("email").style.borderColor = "red";
-        mensagemErro.textContent = "Preencha os campos.";
+        // mensagemErro.textContent = "Preencha os campos.";
     } else {
         // retira do local storage
         var emailRegistrado = localStorage.getItem("emailRegistrado");
