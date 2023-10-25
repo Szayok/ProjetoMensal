@@ -6,19 +6,15 @@ var pos = 0;
 document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 0; i < localStorage.length; i++) {
-        var c = 1;
-        let teste = "c" + c;
-
-        if (localStorage.getItem == teste) {
+        var c = 0;
+        if (localStorage.getItem == "c"+c) {
             c++;
-            carrosCadastrados();
         }
-        cartao = document.querySelectorAll(".veiculo");
     }
-
+    
     if (c != 0) {
         for (let i = 0; i < localStorage.length;i++) {
-            
+            carrosCadastrados();
         }
         cartao = document.querySelectorAll(".veiculo");
     }
@@ -62,7 +58,7 @@ function carrosCadastrados() {
     
     var carro = JSON.parse(stringCarro);
     
-    console.log(carro);
+    console.log(carro, pos);
 
     let veiculos = document.getElementById("veiculos-grid");
     let sessao = document.createElement("section");
