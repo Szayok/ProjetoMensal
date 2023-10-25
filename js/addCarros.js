@@ -7,10 +7,20 @@ document.addEventListener("DOMContentLoaded", function() {
     fechar.addEventListener("click", function() {
         modal.style.display = "none";
     });
-    if (localStorage.length != 0) {
-        for (let i = 0; i < localStorage.length;i++) {
+
+    for (let i = 0; i < localStorage.length; i++) {
+        var c = 0;
+        if (localStorage.getItem != "c"+i) {
+            c++;
+        }
+        
+    }
+    
+    if (c != 0) {
+        for (let i = 0; i < c;i++) {
             carrosCadastrados();
         }
+        cartao = document.querySelectorAll(".veiculo");
     }
 });
 
