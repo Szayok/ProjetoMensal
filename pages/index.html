@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlugaMotors</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/Logo-Amarelo.svg" type="image/x-icon">
+</head>
+<body>
+        <main>
+            <div class="bg_img">
+                <img src="/img/car.jpg" alt="">
+            </div>
+            <div class="bg_card">
+                <section>
+                    <div class="logo">
+                        <img src="/img/Logo.png" alt="">
+                        <h1>AlugaMotors</h1>
+                    </div>  
+                    <form action="/action_page.php">
+                        <div class="box_login_input">
+                            <input type="text" id="email" required> 
+                            <i class="bi bi-person"></i>
+                            <label>Email</label>
+                        </div>
+                        <div class="box_login_input">
+                            <input type="password" id="password" required>
+                            <i class="bi bi-key"></i>
+                            <label>Senha</label>
+                        </div>
+                      </form>
+                      <div>
+                        <div class="login" id="login" onclick="login()">
+                            <p>Entrar</p>
+                        </div>
+                          <div class="buttons">
+                            <a href=""><i class="bi bi-microsoft"></i></a> 
+                            <span>|</span>
+                            <a href=""><i class="bi bi-google"></i></a>
+                            <span>|</span>
+                            <a href=""><i class="bi bi-apple"></i></a>
+                          </div>
+                        <a class="claro" href="/pages/sign_up.html">Cadastrar-se</a>
+                        <a class="claro" href="">Esqueci a senha</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="/js/index.js"></script>
+</body>
+</html>

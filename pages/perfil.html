@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlugaMotors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
+    <title>AlugaMotors</title>
 </head>
 
-<body>
-    <div class="car-model">
-        <div class="car-link">
-            <a href="#">
-                <img src="/Dashboard/Imagens/carro 1.jpeg">
-            </a>
-            <a href="#">
-                <img src="/Dashboard/Imagens/carro 2.jpeg">
-            </a>
-            <a href="#">
-                <img src="/Dashboard/Imagens/carro 3.jpeg"></a>
+<body style="background-color: #04bfbf">
+    <div class="background">
+        <div class="content">
+
+            <div class="profile-header">
+                <img src="../img/profile-pic.png" alt="Imagem de Perfil">
+                <h1 id="userName"></h1>
+                <div class="profile-headerInfo">
+                    <form>
+                        <label for="age" id="age">
+                            
+                        </label>
+                        <label for="cpf" id="cpf"><br>
+                            
+                        </label>
+                        <label for="RG" id="rg"><br>
+                           
+                        </label>
+                    </form>
+                </div>
             </div>
+            
+            <div class="profile-info">
+                <p id="userEmail"></p>
+                <label for=""></label>
+                <p>Localização: Cidade, País</p>
+                
+            </div>
+
+        </div>
     </div>
+
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -45,19 +64,19 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="histórico.html">
+                        <a href="#">
                             <i class="bx bx-book-content icon"></i>
                             <span class="text nav-text">Histórico</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="perfil.html">
+                        <a href="">
                             <i class="bx bx-user icon"></i>
                             <span class="text nav-text">Perfil</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="favoritos.html">
+                        <a href="">
                             <i class="bx bx-star icon"></i>
                             <span class="text nav-text">Favoritos</span>
                         </a>
@@ -66,19 +85,19 @@
             </div>
             <div class="log-out">
                 <li class="nav-link">
-                    <a href="configurações.html"">
+                    <a href="">
                         <i class=" bx bx-cog icon"></i>
                         <span class="text nav-text">Configurações</span>
                     </a>
                 </li>
-                <li class="nav-link">
+                <li class="">
                     <a href="#">
                         <i class="bx bx-help-circle icon"></i>
                         <span class="text nav-text">Central de ajuda</span>
                     </a>
                 </li>
                 <li class="nav-link">
-                    <a href="/Login/index.html">
+                    <a href="/pages/index.html">
                         <i class="bx bxs-log-out icon"></i>
                         <span class="text nav-text">Logout</span>
                     </a>
@@ -86,8 +105,25 @@
             </div>
         </div>
     </nav>
-    <script src="main.js"></script>
-    <!--Area do calendário-->
+
+    <script>
+         var savedName = localStorage.getItem("nomeRegistrado");
+         var savedEmail = localStorage.getItem("emailRegistrado");
+         var savedAge = localStorage.getItem("idadeRegistrada");
+         var savedRg = localStorage.getItem("rgRegistrado");
+         var savedCpf = localStorage.getItem("cpfRegistrado");
+         document.getElementById("userName").innerHTML = savedName;
+         document.getElementById("userEmail").innerHTML = "Email: " +savedEmail;
+         document.getElementById("age").innerHTML = "Idade: " +savedAge;
+         document.getElementById("rg").innerHTML = "RG: " +savedRg;
+         document.getElementById("cpf").innerHTML = "CPF: " +savedCpf;
+         
+    </script>
+
+
+
+    <script src="../js/side.js"></script>
+    <script src="../js/perfil.js"></script>
 </body>
 
 </html>
