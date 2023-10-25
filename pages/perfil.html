@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AlugaMotors</title>
+</head>
+
+<body style="background-color: #04bfbf">
+    <div class="background">
+        <div class="content">
+
+            <div class="profile-header">
+                <img src="../img/profile-pic.png" alt="Imagem de Perfil">
+                <h1 id="userName"></h1>
+                <div class="profile-headerInfo">
+                </div>
+            </div>
+            
+            <div class="profile-info">
+                <h2>Dados Cadastrais</h2>
+                <form>
+                    <label for="age" id="age">
+                        
+                    </label>
+                    <label for="cpf" id="cpf"><br>
+                        
+                    </label>
+                    <label for="RG" id="rg"><br>
+                       
+                    </label>
+                </form>
+                <p id="userEmail"></p>
+                <label for=""></label>
+                <p>Localização: Cidade, País</p>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="search" placeholder="Pesquisar...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-book-content icon"></i>
+                            <span class="text nav-text">Histórico</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <i class="bx bx-user icon"></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <i class="bx bx-star icon"></i>
+                            <span class="text nav-text">Favoritos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="log-out">
+                <li class="nav-link">
+                    <a href="">
+                        <i class=" bx bx-cog icon"></i>
+                        <span class="text nav-text">Configurações</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-help-circle icon"></i>
+                        <span class="text nav-text">Central de ajuda</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="/pages/index.html">
+                        <i class="bx bxs-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+         var savedName = localStorage.getItem("nomeRegistrado");
+         var savedEmail = localStorage.getItem("emailRegistrado");
+         var savedAge = localStorage.getItem("idadeRegistrada");
+         var savedRg = localStorage.getItem("rgRegistrado");
+         var savedCpf = localStorage.getItem("cpfRegistrado");
+         document.getElementById("userName").innerHTML = savedName;
+         document.getElementById("userEmail").innerHTML = "Email: " +savedEmail;
+         document.getElementById("age").innerHTML = "Idade: " +savedAge;
+         document.getElementById("rg").innerHTML = "<br>RG: " +savedRg;
+         document.getElementById("cpf").innerHTML = "<br>CPF: " +savedCpf;
+         
+    </script>
+
+
+
+    <script src="../js/side.js"></script>
+    <script src="../js/perfil.js"></script>
+</body>
+
+</html>
