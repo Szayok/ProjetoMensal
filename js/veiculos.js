@@ -5,7 +5,14 @@ var pos = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    if (localStorage.length != 0) {
+    for (let i = 0; i < localStorage.length; i++) {
+        var c = 0;
+        if (localStorage.getItem == "c"+c) {
+            c++;
+        }
+    }
+    
+    if (c != 0) {
         for (let i = 0; i < localStorage.length;i++) {
             carrosCadastrados();
         }
@@ -47,11 +54,11 @@ function carrosCadastrados() {
 
     pos ++;
     
-    var stringCarro = localStorage.getItem(pos);
+    var stringCarro = localStorage.getItem("c"+pos);
     
     var carro = JSON.parse(stringCarro);
     
-    console.log(carro);
+    console.log(carro, pos);
 
     let veiculos = document.getElementById("veiculos-grid");
     let sessao = document.createElement("section");
