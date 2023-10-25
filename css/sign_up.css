@@ -16,9 +16,6 @@ html {
 body {
   display: flex;
   height: 100vh;
-}
-
-.bg {
   background-image: url(/img/wave.svg);
   backdrop-filter: url(/img/wave.svg) blur(4px);
   background-position: center;
@@ -26,52 +23,51 @@ body {
   background-size: cover;
 }
 
-.card {
-  background-color: rgb(255, 255, 255);
+main {
   box-shadow: 0px 2px 20px 1px rgb(24, 25, 26);
-  display: flex;
+  display: grid;
   margin: auto;
-  text-align: start;
-  /* font-family: "Mooli", sans-serif; */
-  height: 70%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 22px
 }
-.bg_img {
-  background-color: rgb(255, 255, 255);
-  display: flex;
+/* .bg_img {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
   justify-content: center;
   align-items: center;
-  width: 38rem;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 .bg_img img {
   width: 25rem;
   border-bottom: solid 3px black;
-}
+} */
 .bg_card {
+  padding: 25px;
   background-color: var(--color);
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  text-align: center;
+  border-radius: 20px;
 }
 .logo{
+  display: flex; 
+  align-items: center;
+  width: 100%;
+}
+.logo h1{
+  margin-right: auto;
+  color: var(--text);
+}
+.logo img{
   width: 5rem;
+  margin: 0 0 22px auto;
 }
 .box_login_input {
   position: relative;
-  
 }
 .box_login_input input {
   width: 50vh;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -98,11 +94,11 @@ body {
   transition: 0.1s;
 }
 .box_login_input input:focus ~ label,
-.box_login_input input:valid ~ label{  
+.box_login_input input:valid ~ label {
   opacity: 0;
 }
 .box_login_input input:focus ~ i,
-.box_login_input input:valid ~ i{
+.box_login_input input:valid ~ i {
   opacity: 0;
 }
 
@@ -115,32 +111,49 @@ body {
 .login {
   width: 100%;
   height: 2rem;
-  border: none;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  background-color: var(--color);
+  display: flex;
   margin-bottom: 10px;
+  /* background-color: white; */
+  border-radius: 5px;
+  border: solid 1px white;
+  cursor: pointer;
 }
-.login a {
+.login p {
+  width: 100%;
+  margin: auto;
   color: white;
-  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 .buttons {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-evenly;
 }
-.buttons span{
+.buttons span {
   font-size: 1.5rem;
   color: #ebeae8;
 }
-.buttons a{
+.buttons a {
   width: 6rem;
   height: auto;
+  transition: 0.5s;
 }
-.buttons a:hover{
+.buttons a:hover {
   color: #ebeae8;
 }
 .buttons i {
   font-size: 1.5rem;
 }
+.claro {
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+.claro:hover {
+  color: #ebeae8;
+  width: auto;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
