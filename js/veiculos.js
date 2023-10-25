@@ -5,9 +5,20 @@ var pos = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    if (localStorage.length != 0) {
-        for (let i = 0; i < localStorage.length;i++) {
+    for (let i = 0; i < localStorage.length; i++) {
+        var c = 1;
+        let teste = "c" + c;
+
+        if (localStorage.getItem == teste) {
+            c++;
             carrosCadastrados();
+        }
+        cartao = document.querySelectorAll(".veiculo");
+    }
+
+    if (c != 0) {
+        for (let i = 0; i < localStorage.length;i++) {
+            
         }
         cartao = document.querySelectorAll(".veiculo");
     }
@@ -47,7 +58,7 @@ function carrosCadastrados() {
 
     pos ++;
     
-    var stringCarro = localStorage.getItem(pos);
+    var stringCarro = localStorage.getItem("c"+pos);
     
     var carro = JSON.parse(stringCarro);
     

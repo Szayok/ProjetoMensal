@@ -88,18 +88,18 @@ function armazenar(nome, ano, preco, pos) {
 
     const stringCarro = JSON.stringify(carro);
 
-    localStorage.setItem(pos, stringCarro);
+    localStorage.setItem("c"+pos, stringCarro);
 }
 
 function carrosCadastrados() {
 
     pos ++;
     
-    var stringCarro = localStorage.getItem(pos);
+    var stringCarro = localStorage.getItem("c"+pos);
     
     var carro = JSON.parse(stringCarro);
-    
-    console.log(carro);
+
+    console.log(carro, pos);
 
     let veiculos = document.getElementById("veiculos-grid");
     let sessao = document.createElement("section");
