@@ -19,21 +19,22 @@
                 <img src="../img/profile-pic.png" alt="Imagem de Perfil">
                 <h1 id="userName"></h1>
                 <div class="profile-headerInfo">
-                    <form>
-                        <label for="age" id="age">
-                            
-                        </label>
-                        <label for="cpf" id="cpf"><br>
-                            
-                        </label>
-                        <label for="RG" id="rg"><br>
-                           
-                        </label>
-                    </form>
                 </div>
             </div>
             
             <div class="profile-info">
+                <h2>Dados Cadastrais</h2>
+                <form>
+                    <label for="age" id="age">
+                        
+                    </label>
+                    <label for="cpf" id="cpf"><br>
+                        
+                    </label>
+                    <label for="RG" id="rg"><br>
+                       
+                    </label>
+                </form>
                 <p id="userEmail"></p>
                 <label for=""></label>
                 <p>Localização: Cidade, País</p>
@@ -115,8 +116,8 @@
          document.getElementById("userName").innerHTML = savedName;
          document.getElementById("userEmail").innerHTML = "Email: " +savedEmail;
          document.getElementById("age").innerHTML = "Idade: " +savedAge;
-         document.getElementById("rg").innerHTML = "RG: " +savedRg;
-         document.getElementById("cpf").innerHTML = "CPF: " +savedCpf;
+         document.getElementById("rg").innerHTML = "<br>RG: " +savedRg;
+         document.getElementById("cpf").innerHTML = "<br>CPF: " +savedCpf;
          
     </script>
 
