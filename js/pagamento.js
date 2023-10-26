@@ -11,14 +11,16 @@ function TelaCredito(){
     var Home = document.getElementById("Pay");
     var ScrCred = document.getElementById("cred");
     var BtnCred = Array.from(document.getElementsByClassName("BtnCredito"));
-    var NomeCred = BtnCredito.id;
+    
+    
+    BtnCred.forEach((button) => {
+        button.addEventListener("click", function(event){
 
-    BtnCred.forEach((BtnCredito) => {
-        BtnCredito.addEventListener("click", function(event){
             Home.style.display = "none";
             ScrCred.style.display = "block";
 
-            document.getElementById("MudarCredito").innerHTML = NomeCred
+            document.getElementById("MudarCredito").innerHTML = button.id;
+            
         });
 
     })
